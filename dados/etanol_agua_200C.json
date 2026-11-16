@@ -1,0 +1,103 @@
+{
+  "titulo": "Etanol (1) + água (2) a 200 °C",
+  "fonte_dados": "Barr-David e Dodge (1959), Vapor-liquid equilibrium at high pressures: the systems ethanol-water and 2-propanol-water. Journal of Chemical & Engineering Data, 4(2), 107–121. DOI: 10.1021/je60002a003. Valores transcritos da Tabela 1 do artigo fornecido, conforme a ficha da atividade; propriedades críticas conforme essa ficha.",
+  "substancias": [
+    {
+      "nome": "Etanol",
+      "formula": "C2H5OH",
+      "Tc_K": 514.0,
+      "Pc_atm": 60.567,
+      "omega": 0.64356
+    },
+    {
+      "nome": "Água",
+      "formula": "H2O",
+      "Tc_K": 647.13,
+      "Pc_atm": 217.66,
+      "omega": 0.34486
+    }
+  ],
+  "condicoes": {
+    "T_K": 473.15,
+    "R_atm_L_mol_K": 0.08205,
+    "correlacao_m": "peng_robinson"
+  },
+  "pontos_experimentais": [
+    {
+      "x1": 0.023,
+      "y1": 0.134,
+      "P_atm": 17.692
+    },
+    {
+      "x1": 0.048,
+      "y1": 0.219,
+      "P_atm": 19.597
+    },
+    {
+      "x1": 0.088,
+      "y1": 0.299,
+      "P_atm": 21.298
+    },
+    {
+      "x1": 0.157,
+      "y1": 0.381,
+      "P_atm": 23.068
+    },
+    {
+      "x1": 0.214,
+      "y1": 0.424,
+      "P_atm": 24.428
+    },
+    {
+      "x1": 0.345,
+      "y1": 0.495,
+      "P_atm": 26.198
+    },
+    {
+      "x1": 0.479,
+      "y1": 0.579,
+      "P_atm": 27.695
+    },
+    {
+      "x1": 0.58,
+      "y1": 0.641,
+      "P_atm": 28.035
+    },
+    {
+      "x1": 0.689,
+      "y1": 0.719,
+      "P_atm": 28.239
+    },
+    {
+      "x1": 0.824,
+      "y1": 0.828,
+      "P_atm": 28.92
+    }
+  ],
+  "numerica": {
+    "tol_y": 1e-14,
+    "max_iter_y": 200,
+    "tol_pressao": 1e-12,
+    "max_iter_pressao": 150,
+    "tol_k12": 1e-08,
+    "max_aval_k12": 100,
+    "n_pontos_grade_f": 101
+  },
+  "ajuste_k12": {
+    "ajustar": true,
+    "k12_fixo": 0.0,
+    "k12_min": -0.5,
+    "k12_max": 0.5
+  },
+  "diagrama_pxy": {
+    "gerar": true,
+    "n_pontos": 61
+  },
+  "comparar_k12_zero": true,
+  "historico_detalhado_busca": false,
+  "saida": {
+    "pasta": "resultados/etanol_agua_200C",
+    "csv_separador": ",",
+    "csv_decimal": "."
+  }
+}

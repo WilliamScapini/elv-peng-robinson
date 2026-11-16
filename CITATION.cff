@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Ao utilizar esta implementação, cite o software e identifique a versão ou o commit utilizado. Consulte docs/CITACAO.md."
+type: software
+title: "ELV Peng-Robinson em Python"
+authors:
+  - family-names: "Prudencio"
+    given-names: "William José Scapini"
+version: "1.0.0"
+abstract: "Cálculo de equilíbrio líquido–vapor binário pela equação de Peng–Robinson, ajuste de interação binária e diagramas P–x–y, com entradas JSON e apenas a biblioteca padrão do Python."
+license: MIT
+keywords:
+  - "Peng-Robinson"
+  - "equilíbrio líquido-vapor"
+  - "etanol-água"
+  - "Python"
+repository-code: "https://github.com/WilliamScapini/elv-peng-robinson"
+url: "https://github.com/WilliamScapini/elv-peng-robinson/releases/tag/v1.0.0"
+date-released: 2026-11-16

@@ -1,0 +1,68 @@
+{
+  "titulo": "Metano (1) + etano (2) a 172,04 K",
+  "fonte_dados": "Dados e propriedades transcritos do script local elv_peng_robinson_pxy.py. A fonte experimental primária não está identificada nesse script; este exemplo preserva sua configuração e não deve ser atribuído a Barr-David e Dodge.",
+  "substancias": [
+    {
+      "nome": "Metano",
+      "formula": "CH4",
+      "Tc_K": 190.564,
+      "Pc_atm": 45.389,
+      "omega": 0.01155
+    },
+    {
+      "nome": "Etano",
+      "formula": "C2H6",
+      "Tc_K": 305.32,
+      "Pc_atm": 48.083,
+      "omega": 0.09949
+    }
+  ],
+  "condicoes": {
+    "T_K": 172.04,
+    "R_atm_L_mol_K": 0.08205,
+    "correlacao_m": "planilha"
+  },
+  "pontos_experimentais": [
+    {
+      "x1": 0.861,
+      "y1": 0.988,
+      "P_atm": 20.35
+    },
+    {
+      "x1": 0.9175,
+      "y1": 0.9921,
+      "P_atm": 22.05
+    },
+    {
+      "x1": 0.9513,
+      "y1": 0.9915,
+      "P_atm": 23.1
+    }
+  ],
+  "numerica": {
+    "tol_y": 1e-12,
+    "max_iter_y": 200,
+    "tol_pressao": 1e-10,
+    "max_iter_pressao": 100,
+    "tol_k12": 1e-06,
+    "max_aval_k12": 100,
+    "n_pontos_grade_f": 101
+  },
+  "ajuste_k12": {
+    "ajustar": true,
+    "k12_fixo": 0.0064,
+    "k12_min": -0.1,
+    "k12_max": 0.1
+  },
+  "diagrama_pxy": {
+    "gerar": true,
+    "n_pontos": 51
+  },
+  "comparar_k12_zero": false,
+  "historico_detalhado_busca": false,
+  "saida": {
+    "pasta": "resultados/metano_etano",
+    "csv_separador": ",",
+    "csv_decimal": "."
+  }
+}
